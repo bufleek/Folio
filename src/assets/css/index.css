@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'raleway';
+  src: '../fonts/Raleway-VariableFont_wght.ttf';
+}
+
+@font-face {
+  font-family: 'poiret';
+  src: '../fonts/PoiretOne-Regular.ttf';
+}
+
+:root {
+  --color-primary: #00BFBF;
+  --color-on-primary: #FFFFFF;
+  --color-surface: #01080F;
+  --color-on-surface: #FFFFFF;
+  --color-surface-overlay: #01080f94;
+  --font-raleway: 'raleway';
+  --font-poiret: 'poiret';
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-poiret);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-raleway);
+}
+
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing {
+  background: var(--color-surface);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  color: var(--color-on-surface);
+}
+
+.landing button {
+  margin: 40px 0 0 0;
+}
+
+.landing .my-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.landing .my-description p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.landing .my-description h1 {
+  font-size: 40px;
+}
+
+.landing .my-description .my-name {
+  margin-top: 20px;
+}
+
+.landing .my-description p.my-title {
+  text-align: center;
+  font-size: 18px;
+}
+
+.landing .my-description h1 {
+  color: var(--color-primary);
+}
+
+.btn {
+  padding: 10px 20px;
+}
+
+.btn-outlined {
+  background: none;
+  color: var(--color-on-surface);
+  font-weight: bolder;
+  border-color: var(--color-primary);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: bolder;
+  border-color: var(--color-primary);
+}
+
+.btn-rounded {
+  border-radius: 20px;
+}
+
+.my-image {
+  height: 100%;
+  background-image: url("../images/img-bruno.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+#socials-bar {
+  margin: 20px;
+  width: calc(100% - 40px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr max-content;
+      grid-template-columns: 1fr -webkit-max-content;
+      grid-template-columns: 1fr max-content;
+  color: var(--color-on-surface);
+}
+
+#socials-bar ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 980px) {
+  .landing {
+    display: block;
+    position: relative;
+  }
+  .my-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-surface-overlay);
+  }
+}
+/*# sourceMappingURL=index.css.map */
