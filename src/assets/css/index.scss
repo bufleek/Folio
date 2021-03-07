@@ -3,10 +3,9 @@
     src:url('../fonts/Raleway-VariableFont_wght.ttf');
 }
 
-
 @font-face{
-    font-family: 'poiret';
-    src :url('../fonts/PoiretOne-Regular.ttf');
+    font-family: 'source-sans';
+    src :url('../fonts/SourceSansPro-Regular.ttf');
 }
 
 :root{
@@ -18,17 +17,17 @@
     --color-secondary-surface: #020a11b1;
     --color-on-secondary-surface: #FFFFFF;
     --font-raleway: 'raleway';
-    --font-poiret: 'poiret';
+    --font-source-sans: 'source-sans';
 }
 
 *{
     padding: 0;
     margin: 0;
-    font-family: var(--font-poiret);
+    font-family: var(--font-source-sans);
 }
 
 body{
-    font-family: var(--font-poiret);
+    font-family: var(--font-s);
     background: var(--color-surface);
 }
 
